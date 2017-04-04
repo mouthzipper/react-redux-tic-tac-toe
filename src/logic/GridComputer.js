@@ -92,8 +92,11 @@ export function GetWinner (grid) {
     ];
     for (let i = 0; i < lines.length; i++) {
         const [a, b, c] = lines[i];
-        if (grid.get(a) && grid.get(a) === grid.get(b) && grid.get(a) === grid.get(c)) {
+        if (grid.get(a) && grid.get(a) === grid.get(b) && grid.get(a) === grid.get(c) &&
+         grid.get(a) !== Constants.PLAYER._) {
         return grid.get(a);
         }
     }
+
+    return Constants.PLAYER._;
 }
