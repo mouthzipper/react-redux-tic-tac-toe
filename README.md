@@ -14,3 +14,7 @@ Install [Node.js](http://nodejs.org)
 
 [Run locally in the browser](http://localhost:3000)
 
+## TODO
+ - Game size chooser. min. 3x3
+ - Dynamic size winner checker
+

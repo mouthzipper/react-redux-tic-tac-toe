@@ -7,7 +7,7 @@ function getInitialState () {
         outcome: Constants.STATE.ONGOING
     });
 }
-
+// defualt state should be from the input
 export default function TicTacToeReducer (state = getInitialState(), action) {
       switch (action.type) {
         case Constants.MAKE_MOVE:

@@ -18,10 +18,8 @@ function calculateOutcome (grid) {
 
 export function makeMove (index) {
       return (dispatch, getState) => {
-        let grid = getState().get('grid'),
-            outcome;
-        console.log(grid);
-        console.log(outcome)
+        let grid = getState().get('grid');
+        let outcome;
         if (grid.get(index) !== Constants.PLAYER._) {
             return;
         }
